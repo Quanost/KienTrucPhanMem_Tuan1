@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.receiver_point_to_point.HelloController">
+   <children>
+      <AnchorPane layoutX="319.0" layoutY="10.0" prefHeight="562.0" prefWidth="539.0">
+         <children>
+            <TextField fx:id="txtMa" layoutX="163.0" layoutY="14.0" prefHeight="60.0" prefWidth="362.0" />
+            <Label layoutX="25.0" layoutY="25.0" prefHeight="60.0" prefWidth="136.0" text="Mã số bệnh nhân:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCMND" layoutX="163.0" layoutY="99.0" prefHeight="60.0" prefWidth="362.0" />
+            <Label layoutX="25.0" layoutY="99.0" prefHeight="60.0" prefWidth="136.0" text="Số CMND:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtHoTen" layoutX="163.0" layoutY="176.0" prefHeight="60.0" prefWidth="362.0" />
+            <Label layoutX="25.0" layoutY="176.0" prefHeight="60.0" prefWidth="136.0" text="Họ Tên:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDiaChi" layoutX="163.0" layoutY="266.0" prefHeight="60.0" prefWidth="362.0" />
+            <Label layoutX="25.0" layoutY="266.0" prefHeight="60.0" prefWidth="136.0" text="Địa chỉ:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNoiDungKham" layoutX="25.0" layoutY="388.0" prefHeight="113.0" prefWidth="497.0" />
+            <Label layoutX="27.0" layoutY="337.0" prefHeight="60.0" prefWidth="136.0" text="Nội dụng khám:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCapNhat" onAction="#CapNhat" layoutX="137.0" layoutY="512.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="267.0" text="Cập nhật thông tin khám bệnh">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnGoiKham" onAction="#GoiKham" layoutX="40.0" layoutY="513.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="230.0" text="Gọi khám">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="24.0" layoutY="26.0" prefHeight="473.0" prefWidth="307.0">
+        <columns>
+          <TableColumn fx:id="ma" prefWidth="149.0" text="Ma" />
+          <TableColumn fx:id="ten" prefWidth="143.0" text="Ten" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
